@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selectors</title>
     <style>
-        .container{
-            display: flex;
-            flex-wrap: wrap;
-        }
         /*
             element selector
 
@@ -17,6 +13,7 @@
             }
         */
         div{
+            display: block;
             width: 200px;
             height: 200px;
             background-color: red;
@@ -59,14 +56,26 @@
             height: 200px;
             background: lavender;
            }
+
+           /*
+           combine sector element
+
+           ele1,ele2,ele3{
+            property:value;
+           }
+
+           */
+
+           div,span#a1,span.aaa,a[href="https://google.com"]{
+            display: inline-block;
+           }
+
     </style>
 </head>
 <body>
-    <div class="container">
         <div>element seclector</div>
         <span id="a1">element id selector</span>
         <span class="aaa">element css selector</span>
         <a href="https://google.com">css attribute selector</a>
-    </div>
 </body>
 </html>
