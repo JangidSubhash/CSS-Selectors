@@ -42,6 +42,19 @@
             height: 200px;
             background: pink;  
            } 
+
+           /*
+           attribute selector
+           element[name=value]{
+            property:value;
+           }
+           */
+           a[href="https://google.com"]{
+            display: block;
+            width: 200px;
+            height: 200px;
+            background: lavender;
+           }
     </style>
 </head>
 <body>
@@ -49,5 +62,6 @@
     <div>element seclector</div>
     <span id="a1">element id selector</span>
     <span class="aaa">element css selector</span>
+    <a href="https://google.com">css attribute selector</a>
 </body>
 </html>
